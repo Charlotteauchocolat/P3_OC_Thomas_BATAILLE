@@ -1,0 +1,217 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: large;
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+  /*Snippet pour les préfixes de box-sizing*/
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* END Normalize CSS */
+
+/* ----REGLES GENERALES---- */
+
+main,
+section,
+article,
+footer,
+figure {
+  width: 100%;
+}
+
+/* Taille des polices et des titres */
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: x-large;
+  padding: 20px;
+}
+
+h3 {
+  font-size: medium;
+  margin-right: 15px;
+}
+
+h4 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: x-large;
+}
+
+p {
+  font-weight: 500;
+  padding: 15px;
+}
+
+i {
+  padding: 15px;
+}
+
+/* Mise en place du Loader de chargement de la Page */
+
+/* ---CORPS de la page--- */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+/* ---HEADER---*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.website-title {
+  background-color: #f6f6f6;
+  justify-content: center;
+  margin: 0;
+}
+
+.website-title h1 {
+  display: flex;
+  margin: 20px;
+  font-size: xx-large;
+  justify-content: center;
+}
+
+/* ---Bandeau de localisation de la page--- */
+
+.localization {
+  display: flex;
+  background-color: #d8d8d8;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header i {
+  padding: 20px;
+}
+/* ----MODE D'EMPLOI du site---- */
+
+.reservation {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-princ {
+  justify-content: center;
+  background-color: crimson;
+  border-radius: 33px;
+  padding: 20px;
+  margin: 20px;
+  color: #f6f6f6;
+}
+
+.website-manual {
+  background-color: #d8d8d8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.website-manual ul {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.website-manual ul li {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px #999;
+}
+
+.restaurants {
+  background-color: #b8b8b8;
+}
+
+.main-page-menu {
+    display: flex;
+}
+
+.restaurants article {
+  width: 30%;
+  margin: 20px;
+  background-color: white;
+  border-radius: 22px;
+  padding: 0px;
+  box-shadow: 0px 5px 20px #999;
+}
+
+.restaurants article figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants article figcaption {
+  padding: 15px;
+}
+
+.restaurants article figcaption i {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.restaurants article figure div {
+    display: flex;
+    flex-direction: column;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 18px 18px 0px 0px;
+}
+
+.restaurants article figure div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  color: #f6f6f6;
+  background-color: #222222;
+}
+
+footer h4 {
+  padding-left: 40px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer ul li {
+  padding: 20px;
+}
