@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Taille des polices et des titres */
+
+h1 {
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    margin: 5px 30px;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: x-large;
+    padding: 0px;
+    margin: 20px 10px 10px;
+  }
+  
+  h3 {
+    font-size: medium;
+    margin-right: 15px;
+  }
+  
+  h4 {
+    font-family: "Shrikhand", cursive;
+    font-weight: 500;
+    font-size: x-large;
+  }
+  
+  p {
+    font-weight: 400;
+    padding: 15px 0px;
+  }
+  
+  i {
+    padding: 15px;
+  }
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;
+}

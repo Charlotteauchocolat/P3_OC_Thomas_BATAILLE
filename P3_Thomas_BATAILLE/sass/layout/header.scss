@@ -1,0 +1,49 @@
+/* ---HEADER---*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.website-title {
+  background-color: #f6f6f6;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 1px 12px 1px #000;
+}
+
+h1 {
+  display: flex;
+  margin: 5px 30px;
+  font-size: xx-large;
+}
+
+.website-title h1 {
+  display: flex;
+  justify-content: center;
+}
+
+header a {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  font-size: 22px;
+}
+
+/* ---Bandeau de localisation de la page--- */
+
+.localization {
+  display: flex;
+  background-color: #eaeaea;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+header i {
+  padding: 20px;
+}
