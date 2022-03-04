@@ -1,27 +1,52 @@
 footer {
   display: flex;
-  align-items: center;
   color: #f6f6f6;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5px;
   background-color: #353535;
   margin-top: auto;
 }
 
 footer h4 {
-  padding-left: 40px;
+  margin: 20px 20px 10px;
 }
 
 footer ul {
   display: flex;
-  max-width: 1440px;
-
-  align-items: center;
+  flex-direction: column;
   list-style-type: none;
-  justify-content: space-evenly;
 }
 
 footer ul li {
-  margin: 5px 0px;
   margin: 5px 20px;
   padding: 5px;
+}
+
+footer ul li i {
+  padding-right: 5px;
+  width: 20px;
+}
+
+footer ul .partner-icon {
+  transform: rotate(-35deg);
+}
+
+/* Mise en place des Media Queries */
+
+@media all and (min-width: 992px) {
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer ul {
+    max-width: 992px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
 }

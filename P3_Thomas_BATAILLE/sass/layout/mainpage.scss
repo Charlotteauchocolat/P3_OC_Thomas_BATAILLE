@@ -3,13 +3,15 @@
 .reservation {
   background-color: #f6f6f6;
   display: flex;
+  padding: 20px 35px;
+  text-align: center;
   flex-direction: column;
   align-items: center;
 }
 
 .btn-princ {
   justify-content: center;
-  background: linear-gradient(215deg, #e24f62 20%, #6847f8 80%);
+  background: linear-gradient(196deg, #df7ace 20%, #9a47f8 80%);
   border-radius: 33px;
   padding: 15px 20px;
   border: none;
@@ -35,6 +37,7 @@ a {
 .website-manual ul {
   max-width: 1440px;
   display: flex;
+  flex-direction: column;
   flex-basis: 100%;
   justify-content: center;
 }
@@ -42,7 +45,7 @@ a {
 .website-manual ul li {
   background-color: #f6f6f6;
   display: flex;
-  width: 30%;
+  position: relative;
   align-items: center;
   height: 100px;
   margin: 10px 15px;
@@ -50,27 +53,42 @@ a {
   box-shadow: 0px 5px 20px #999;
 }
 
+.website-manual ul li:hover {
+  background-color:rgba(229, 164, 235, 0.418);
+}
+
 .website-manual ul li div {
   display: flex;
+  padding: 20px;
   align-items: center;
 }
 
 .website-manual ul li i {
   color: #757575;
   font-size: 30px;
+  padding-right: 20px;
+}
+
+.website-manual ul li p {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .number {
   border-radius: 50%;
   background: #9356dc;
+  position: relative;
+  left: -18px;
   color: #ffff;
-  height: 30px;
-  width: 30px;
-  padding: 4px;
+  height: 35px;
+  width: 35px;
+  padding: 6px;
   text-align: center;
   align-items: center;
   font-weight: 400;
 }
+
+/*----Section dédiée aux RESTAURANTS----*/
 
 section {
   padding: 20px;
@@ -89,7 +107,7 @@ section {
 }
 
 .restaurants article {
-  width: 24%;
+  width: 100%;
   margin: 15px auto;
   display: flex;
   flex-direction: column;
@@ -105,6 +123,13 @@ section {
   flex-direction: column;
 }
 
+.restaurant-card-img {
+  max-height: 240px;
+  overflow: hidden;
+  display: flex;
+  object-position: bottom;
+}
+
 .restaurants article figcaption {
   display: flex;
   align-items: center;
@@ -118,26 +143,21 @@ section {
   justify-content: flex-end;
 }
 
-.restaurants article figure div {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 18px 18px 0px 0px;
-}
-
 .restaurants article figure div img {
   width: 100%;
-  height: 100%;
+  border-radius: 18px 18px 0 0;
   object-fit: cover;
   object-position: 50% 61%;
 }
 
 .restaurant-card-text {
   height: 80px;
+  margin-top: 15px;
 }
 
 .heart-box {
+  display: flex;
+  align-items: center;
   position: relative;
   height: 80px;
 }

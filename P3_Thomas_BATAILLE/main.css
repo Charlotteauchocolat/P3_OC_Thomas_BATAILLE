@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -54,10 +55,6 @@ p {
   padding: 15px 0px;
 }
 
-i {
-  padding: 15px;
-}
-
 textarea {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -79,39 +76,74 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #f6f6f6;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
   background-color: #353535;
   margin-top: auto;
 }
 
 footer h4 {
-  padding-left: 40px;
+  margin: 20px 20px 10px;
 }
 
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1440px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style-type: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 footer ul li {
-  margin: 5px 0px;
   margin: 5px 20px;
   padding: 5px;
+}
+
+footer ul li i {
+  padding-right: 5px;
+  width: 20px;
+}
+
+footer ul .partner-icon {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+/* Mise en place des Media Queries */
+@media all and (min-width: 992px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer ul {
+    max-width: 992px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 /* ---HEADER---*/
@@ -134,10 +166,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 1;
   margin: 0;
   padding: 0;
-  -webkit-box-shadow: 0px 1px 12px 1px #000;
-          box-shadow: 0px 1px 12px 1px #000;
+  -webkit-box-shadow: 0px 0px 10px 0px #323205;
+          box-shadow: 0px 0px 10px 0px #323205;
 }
 
 h1 {
@@ -190,6 +224,8 @@ header i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px 35px;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -203,7 +239,7 @@ header i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(215deg, #e24f62 20%, #6847f8 80%);
+  background: linear-gradient(196deg, #df7ace 20%, #9a47f8 80%);
   border-radius: 33px;
   padding: 15px 20px;
   border: none;
@@ -235,6 +271,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -webkit-box-pack: center;
@@ -247,7 +287,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -258,10 +298,15 @@ a {
           box-shadow: 0px 5px 20px #999;
 }
 
+.website-manual ul li:hover {
+  background-color: rgba(229, 164, 235, 0.418);
+}
+
 .website-manual ul li div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -270,15 +315,23 @@ a {
 .website-manual ul li i {
   color: #757575;
   font-size: 30px;
+  padding-right: 20px;
+}
+
+.website-manual ul li p {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .number {
   border-radius: 50%;
   background: #9356dc;
+  position: relative;
+  left: -18px;
   color: #ffff;
-  height: 30px;
-  width: 30px;
-  padding: 4px;
+  height: 35px;
+  width: 35px;
+  padding: 6px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -286,6 +339,7 @@ a {
   font-weight: 400;
 }
 
+/*----Section dédiée aux RESTAURANTS----*/
 section {
   padding: 20px;
 }
@@ -311,7 +365,7 @@ section {
 }
 
 .restaurants article {
-  width: 24%;
+  width: 100%;
   margin: 15px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,6 +392,16 @@ section {
           flex-direction: column;
 }
 
+.restaurant-card-img {
+  max-height: 240px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .restaurants article figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,22 +425,9 @@ section {
           justify-content: flex-end;
 }
 
-.restaurants article figure div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 18px 18px 0px 0px;
-}
-
 .restaurants article figure div img {
   width: 100%;
-  height: 100%;
+  border-radius: 18px 18px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 61%;
@@ -385,9 +436,16 @@ section {
 
 .restaurant-card-text {
   height: 80px;
+  margin-top: 15px;
 }
 
 .heart-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   height: 80px;
 }
@@ -426,10 +484,10 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 320px;
-  margin-bottom: 10px;
-  -o-object-position: 10% 55%;
-     object-position: 10% 55%;
+  height: 340px;
+  margin-bottom: -35px;
+  -o-object-position: 10% 56%;
+     object-position: 10% 56%;
 }
 
 .menu {
@@ -453,6 +511,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60px;
+  margin-top: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -463,21 +523,32 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .courses-list {
-  width: 30%;
-  margin: 0 10px;
+  width: 100%;
 }
 
 .courses-list h2 {
   position: relative;
-  margin: 10px 15px 0 0;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.courses-list h2::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 36px;
+  border-bottom: 3px solid #99e2d0;
 }
 
 .courses {
@@ -490,11 +561,11 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 10px;
+  padding: 8px 8px;
   background: #ffff;
   border-radius: 15px;
   overflow: hidden;
-  margin: 10px 0;
+  margin: 13px 0;
   -webkit-box-shadow: 0px 5px 10px -10px black;
           box-shadow: 0px 5px 10px -10px black;
 }
@@ -506,11 +577,13 @@ section {
   overflow: hidden;
 }
 
+.courses-infos p {
+  font-weight: 300;
+  padding: 5px 0 0 0;
+}
+
 .courses-prices {
   text-align: end;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
   font-weight: 600;
   margin-right: 4px;
   -webkit-box-flex: 1;
@@ -518,10 +591,16 @@ section {
           flex-grow: 1;
 }
 
+.courses-block-icon {
+  visibility: hidden;
+}
+
 .btn-restaurant-pages {
   padding: 15px 20px;
   margin: 20px;
-  width: 12%;
+  width: 33%;
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,8 +612,8 @@ section {
   border: none;
   text-align: center;
   font-weight: 600;
-  background: linear-gradient(170deg, #ad3672 0%, #4a2cce 100%);
-  -webkit-box-shadow: 0px 1px 12px 1px #3a3a01;
-          box-shadow: 0px 1px 12px 1px #3a3a01;
+  background: linear-gradient(184deg, #e079c7 0%, #8c2ccc 86%);
+  -webkit-box-shadow: 0px 0px 10px 0px #3a3a01;
+          box-shadow: 0px 0px 10px 0px #3a3a01;
 }
 /*# sourceMappingURL=main.css.map */
