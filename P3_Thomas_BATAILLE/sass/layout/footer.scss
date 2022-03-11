@@ -39,7 +39,11 @@ footer ul .partner-icon {
   footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
+  }
+
+  footer h4 {
+    margin: 10px 40px 10px;
   }
   
   footer ul {
