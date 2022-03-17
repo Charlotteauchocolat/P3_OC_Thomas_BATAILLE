@@ -1,16 +1,72 @@
 #loader {
+  background: #f6f6f6;
+  overflow: hidden;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   position: absolute;
-  left: 50%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: loading 2s ease-in 3s forwards;
+          animation: loading 2s ease-in 3s forwards;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#loader-element {
+  position: absolute;
+  left: 48%;
   top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 1;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
+  border: 12px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #9034db;
+  border-top: 12px solid #9034db;
   -webkit-animation: spin 1s ease-in-out infinite;
           animation: spin 1s ease-in-out infinite;
+}
+
+#loader-title {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 42%;
+  top: 50%;
+  font-size: 24px;
+  -webkit-animation: pulse 1.2s ease-in-out infinite;
+          animation: pulse 1.2s ease-in-out infinite;
 }
 
 @-webkit-keyframes spin {
@@ -32,6 +88,42 @@
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=loader.css.map */

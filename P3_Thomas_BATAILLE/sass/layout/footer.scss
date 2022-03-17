@@ -1,6 +1,8 @@
+@import "../utils/variables";
+
 footer {
   display: flex;
-  color: #f6f6f6;
+  color: $colour-background;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 5px;
@@ -21,6 +23,9 @@ footer ul {
 footer ul li {
   margin: 5px 20px;
   padding: 5px;
+  &:hover{
+    color: $colour-pink;
+    }
 }
 
 footer ul li i {
