@@ -66,7 +66,7 @@ a {
 .website-manual ul li:hover {
   background-color: rgba(130, 62, 185, 0.123);
   cursor: pointer;
-  .website-manual ul li i {
+  &.website-manual ul li i {
     color: $colour-purple;
   }
 }

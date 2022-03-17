@@ -95,7 +95,7 @@ a {
   cursor: pointer;
 }
 
-.website-manual ul li:hover .website-manual ul li i {
+.website-manual ul li:hover.website-manual ul li i {
   color: #9356dc;
 }
 

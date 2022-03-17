@@ -14,9 +14,6 @@
   .heart-icon--full {
     opacity: 1;
     transform: scale(1.2);
-    color: transparent;
-    background: $colour-gradient;
-    background-clip: text;
   }
 }
 
@@ -33,12 +30,12 @@
 .heart-icon--full {
   position: absolute;
   right: 15px;
-  color: transparent;
-  overflow: hidden;
+  color: linear-gradient (45deg, $colour-pink 0%, $colour-purple 100%);
+  background: linear-gradient (45deg, $colour-pink 0%, $colour-purple 100%);
+  background-color: $colour-gradient;
   background-clip: text;
   opacity: 0;
   font-size: 24px;
   transform-origin: 50% 100%;
   transition: all 500ms;
-  background-color: #fff;
 }
