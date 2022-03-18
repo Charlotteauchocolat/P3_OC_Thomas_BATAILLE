@@ -30,12 +30,17 @@
 .heart-icon--full {
   position: absolute;
   right: 15px;
-  color: linear-gradient (45deg, $colour-pink 0%, $colour-purple 100%);
-  background: linear-gradient (45deg, $colour-pink 0%, $colour-purple 100%);
-  background-color: $colour-gradient;
+  background: $colour-gradient;
+  -webkit-background-clip: text;
   background-clip: text;
   opacity: 0;
   font-size: 24px;
   transform-origin: 50% 100%;
   transition: all 500ms;
+}
+
+.fa-heart.heart-icon--full:before {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

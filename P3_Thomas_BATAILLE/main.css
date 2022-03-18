@@ -29,7 +29,8 @@ body {
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
-  margin: 5px 30px;
+  font-size: 28px;
+  margin: 5px 25px;
 }
 
 h2 {
@@ -40,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-size: medium;
+  font-size: 20px;
   padding: 8px 0 0 0;
   margin-right: 15px;
 }
@@ -59,7 +60,7 @@ p {
 textarea {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 32rem;
 }
 
 ul {
@@ -70,7 +71,7 @@ button {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 2.75rem;
+  font-size: 44rem;
 }
 
 #loader {
@@ -270,9 +271,8 @@ button {
 .heart-icon--full {
   position: absolute;
   right: 15px;
-  color: linear-gradient 45deg, #ff79da 0%, #9356dc 100%;
-  background: linear-gradient 45deg, #ff79da 0%, #9356dc 100%;
-  background-color: linear-gradient(160deg, #ff79da 30%, #9356dc 95%);
+  background: linear-gradient(160deg, #ff79da 30%, #9356dc 95%);
+  -webkit-background-clip: text;
   background-clip: text;
   opacity: 0;
   font-size: 24px;
@@ -280,6 +280,12 @@ button {
           transform-origin: 50% 100%;
   -webkit-transition: all 500ms;
   transition: all 500ms;
+}
+
+.fa-heart.heart-icon--full:before {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -392,21 +398,18 @@ header {
           box-shadow: 0px 0px 10px 3px #b9b9b9;
 }
 
-h1 {
+.website-title > h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 5px 30px;
-  font-size: xx-large;
-}
-
-.website-title h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 16px;
 }
 
 header a {
@@ -429,7 +432,13 @@ header a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 4px;
+}
+
+.localization > h2 {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 3px 0px;
 }
 
 header i {
@@ -530,6 +539,8 @@ a {
 .website-manual ul li:hover {
   background-color: rgba(130, 62, 185, 0.123);
   cursor: pointer;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .website-manual ul li:hover.website-manual ul li i {
@@ -555,6 +566,10 @@ a {
 .website-manual ul li p {
   font-size: 18px;
   font-weight: 500;
+}
+
+section.website-manual ul li:hover .fas:before {
+  color: #9356dc;
 }
 
 .number {
@@ -626,7 +641,7 @@ section {
 }
 
 .restaurant-card-img {
-  max-height: 220px;
+  max-height: 200px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;

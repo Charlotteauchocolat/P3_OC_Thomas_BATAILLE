@@ -93,6 +93,8 @@ a {
 .website-manual ul li:hover {
   background-color: rgba(130, 62, 185, 0.123);
   cursor: pointer;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .website-manual ul li:hover.website-manual ul li i {
@@ -118,6 +120,10 @@ a {
 .website-manual ul li p {
   font-size: 18px;
   font-weight: 500;
+}
+
+section.website-manual ul li:hover .fas:before {
+  color: #9356dc;
 }
 
 .number {
@@ -189,7 +195,7 @@ section {
 }
 
 .restaurant-card-img {
-  max-height: 220px;
+  max-height: 200px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
