@@ -30,7 +30,7 @@
   -webkit-box-shadow: 0px 5px 5px 1px #b9b9b9;
           box-shadow: 0px 5px 5px 1px #b9b9b9;
   margin: 20px;
-  color: #ffff;
+  color: #fff;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
@@ -237,8 +237,7 @@ section {
 }
 
 .restaurant-card-text {
-  height: 80px;
-  margin-top: 15px;
+  height: 90px;
 }
 
 .restaurants span {
@@ -277,6 +276,9 @@ section {
   }
   .restaurants article {
     width: 24%;
+  }
+  .restaurant-card-text {
+    height: 80px;
   }
   .restaurant-card-img {
     max-height: 150px;

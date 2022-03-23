@@ -1,3 +1,5 @@
+/*--import des variables--*/
+/*--MISE EN PLACE DE LA PAGE DES RESTAURANTS--*/
 .lead-image {
   -o-object-fit: cover;
      object-fit: cover;
@@ -116,7 +118,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #ffff;
+  background: #fff;
   border-radius: 15px;
   overflow: hidden;
   margin: 13px 0;
@@ -179,7 +181,7 @@
 }
 
 .courses-icon {
-  color: #ffff;
+  color: #fff;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   font-size: 24px;
@@ -192,7 +194,7 @@
 .btn-restaurant-pages {
   padding: 15px 20px;
   margin: 40px 40px 60px;
-  width: 60%;
+  width: 250px;
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -201,20 +203,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ffff;
+  color: #fff;
   border-radius: 30px;
   border: none;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  background: linear-gradient(184deg, #e079c7 0%, #8c2ccc 86%);
+  background: linear-gradient(160deg, #ff79da 30%, #9356dc 95%);
   -webkit-box-shadow: 0px 5px 5px 1px #b9b9b9;
           box-shadow: 0px 5px 5px 1px #b9b9b9;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .btn-restaurant-pages:hover {
-  -webkit-box-shadow: 8px 8px 8px 5px #b9b9b9;
-          box-shadow: 8px 8px 8px 5px #b9b9b9;
+  -webkit-box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.7);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

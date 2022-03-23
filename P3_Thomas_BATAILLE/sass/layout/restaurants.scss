@@ -1,3 +1,9 @@
+/*--import des variables--*/
+
+@import "../utils/variables";
+
+/*--MISE EN PLACE DE LA PAGE DES RESTAURANTS--*/
+
 .lead-image {
   object-fit: cover;
   width: 100%;
@@ -7,7 +13,7 @@
 }
 
 .menu {
-  background: #f6f6f6;
+  background: $colour-background;
   border-radius: 30px 30px 0 0;
   padding: 15px;
   width: 100%;
@@ -67,14 +73,14 @@
   position: absolute;
   width: 58px;
   height: 36px;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid $colour-green;
 }
 
 .courses {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffff;
+  background: $colour-white;
   border-radius: 15px;
   overflow: hidden;
   margin: 13px 0;
@@ -116,7 +122,7 @@
   opacity: 0;
   display: flex;
   align-items: center;
-  background: #99e2d0;
+  background: $colour-green;
   border-radius: 0 15px 15px 0;
   width: 0%;
   justify-content: center;
@@ -125,7 +131,7 @@
 }
 
 .courses-icon {
-  color: #ffff;
+  color: $colour-white;
   transform: rotate(360deg);
   font-size: 24px;
   transition: transform 700ms ease-in-out;
@@ -138,13 +144,13 @@
   align-self: center;
   display: flex;
   justify-content: center;
-  color: #ffff;
+  color: $colour-white;
   border-radius: 30px;
   border: none;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
-  background: linear-gradient(184deg, #e079c7 0%, #8c2ccc 86%);
+  background: $colour-gradient;
   box-shadow: $button-shadow;
   transition: all 500ms;
   &:hover {
